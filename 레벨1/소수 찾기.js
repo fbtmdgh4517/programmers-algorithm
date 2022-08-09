@@ -1,7 +1,7 @@
 function solution(n) {
     let answer = 0;
 
-    for (let i = 2; i <= n; i++) {
+    for (let i = 3; i <= n; i++) {
         let count = 0;
 
         for (let j = 2; j <= Math.sqrt(i); j++) {
@@ -16,5 +16,5 @@ function solution(n) {
         }
     }
 
-    return answer;
+    return answer + 1;
 }
